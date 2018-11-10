@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+.app #list li, input, button {
+  list-style: none;
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  padding: 15px 0;
+  width: 100%;
+}
+
+body {
+	background-color: #eceff0;
+	padding-bottom: 40px;
+}
+
+.app {
+  font: 1em "Open Sans", sans-serif;
+  background-color: #fff;
+  color: #363639;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+	text-transform: capitalize;
+}
+
+.app h1 {
+  font-family: "Shadows Into Light Two", cursive;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.app a {
+  text-decoration: none;
+  border-bottom: 1px dashed #363639;
+}
+
+.app input:focus {
+  outline: none;
+}
+
+.app #list {
+  margin: 0;
+  padding: 0;
+}
+
+.app #list li:hover .btn {
+  opacity: 1;
+}
+
+.app #list .btn {
+  display: inline-block;
+  font-size: 0.8em;
+  background-color: #d9dfe1;
+  color: #363639;
+  padding: 3px 6px;
+  border: none;
+  opacity: 0.4;
+  float: right;
+}
+
+.app .item.done {
+  text-decoration: line-through;
+}
+
+.app button {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  box-shadow: 2px 2px 0 #ddd;
+  cursor: pointer;
+}
+
+footer{
+	background-color: #363639;
+	color: #ccc;
+	padding: 20px 0;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
